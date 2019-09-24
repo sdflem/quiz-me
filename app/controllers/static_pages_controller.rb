@@ -1,4 +1,11 @@
 class StaticPagesController < ApplicationController
+
+  def contact
+    respond_to do |format|
+      format.html { render :contact }
+    end
+  end
+
   def welcome
     features = [
       'Choose from premade quizzes on a variety of topics',
